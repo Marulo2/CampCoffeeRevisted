@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.headContainer {
+  display:
+  margin-left: -1vw;
+  margin-right: 80vw;
+  padding-top: 1vw;
+  padding-bottom: 50vw;
+  padding-left: 1vw;
+  background-color: darkgreen;
+}
+
+.mainContainer {
+  margin-left: -1vw;
+  margin-right: 60vw;
+  padding-top: 5vw;
+  padding-bottom: 25vw;
+  padding-left: 50vw;
+  background-color: brown;
+}
+
+.footContainer {
+  margin-left: -1vw;
+  margin-right: -1vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  background-color: yellow;
+}
