@@ -37,6 +37,8 @@ CampCoffee.prototype.mathCups = function() {
 }
 
 CampCoffee.prototype.renderCustomers = function() {
+  this.mathCustomer();
+
   var sectionEl = document.getElementById('sectionCustomers');
   var tableEl = document.createElement('table');
   var rowEl = document.createElement('tr');
@@ -56,6 +58,10 @@ CampCoffee.prototype.renderCustomers = function() {
 }
 
 CampCoffee.prototype.renderCups = function() {
+  this.mathCustomer();
+  this.mathPounds();
+  this.mathCups();
+
   var sectionEl = document.getElementById('sectionCups');
   var tableEl = document.createElement('table');
   var rowEl = document.createElement('tr');
@@ -75,6 +81,11 @@ CampCoffee.prototype.renderCups = function() {
 }
 
 CampCoffee.prototype.renderPounds = function() {
+
+  this.mathCustomer();
+  this.mathPounds();
+  this.mathCups();
+
   var sectionEl = document.getElementById('sectionPounds');
   var tableEl = document.createElement('table');
   var rowEl = document.createElement('tr');
