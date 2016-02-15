@@ -1,9 +1,5 @@
 var timeArray = ['8am ', '9am ', '10am ', '11am ', '12pm ', '1pm ', '2pm ', '3pm ', '4pm ', '5pm ']
 
-CampCoffee.mathCustomer();
-CampCoffee.mathCups();
-CampCoffee.mathPounds();
-
 var locationData = [new CampCoffee('Pike Place Market', 14, 55, 1.2, 3.7),
 new CampCoffee('Capitol Hill', 32, 48, 3.2, 0.4),
 new CampCoffee('Seattle Public Library', 49, 75, 2.6, 0.2),
