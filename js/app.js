@@ -36,6 +36,39 @@ CampCoffee.prototype.mathCups = function() {
   }
 }
 
+CampCoffee.prototype.renderCustomers = function() {
+
+}
+
+CampCoffee.prototype.renderCups = function() {
+
+}
+
+CampCoffee.prototype.renderPounds = function() {
+
+  this.mathCustomer();
+  this.mathCups();
+  this.mathPounds();
+
+  var sectionEl = document.getElementById('sectionTable');
+  var tableEl = document.createElement('table');
+  var rowEl = document.createElement('tr');
+  var rowEl2 = document.createElement('tr');
+
+  var headEl = document.createElement('th');
+    headEl.textContent = this.location;
+    rowEl.appendChild(headEl);
+
+for (var i = 0; i < timeArray.length; i++) {
+  var dataEl = document.createElement('td');
+  dataEl.textContent = this.poundsHour[i].toFixed(1);
+  rowEl.appendChild(dataEl);
+}
+
+  tableEl.appendChild(rowEl);
+  sectionEl.appendChild(tableEl);
+};
+
 function tableDisplay() {
   var sectionEl = document.getElementById('sectionTable');
   var tableEl = document.createElement('table');
@@ -56,3 +89,6 @@ function tableDisplay() {
 };
 
 tableDisplay();
+for (var i = 0; i < locationData.length; i++){
+  locationData[i].render();
+};
