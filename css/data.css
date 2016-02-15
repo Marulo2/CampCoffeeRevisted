@@ -1,0 +1,21 @@
+table {
+  border: 1px solid black;
+  margin: 1vw;
+}
+
+tr {
+  border: 1px solid black;
+  padding: 1vw;
+}
+
+td {
+  border: 1px solid black;
+  padding: 1vw;
+}
+
+th {
+  border: 1px solid black;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-around;
+}
