@@ -1,4 +1,4 @@
-var timeArray = ['8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ']
+var timeArray = ['8am ', '9am ', '10am ', '11am ', '12pm ', '1pm ', '2pm ', '3pm ', '4pm ', '5pm ']
 
 var locationData = [new CampCoffee('Pike Place Market', 14, 55, 1.2, 3.7),
 new CampCoffee('Capitol Hill', 32, 48, 3.2, 0.4),
@@ -19,7 +19,7 @@ function CampCoffee(location, min, max, cups, pounds) {
 };
 
 CampCoffee.prototype.mathCustomer = function() {
-  for (var i = 0l i < timeArray.length; i++) {
+  for (var i = 0; i < timeArray.length; i++) {
     this.customerHour.push(Math.floor(Math.random() * (this.max - this.min + 1) + this.min));
   }
 };
@@ -35,3 +35,24 @@ CampCoffee.prototype.mathCups = function() {
     this.cupsHour.push((this.cupsHour[i] * this.cups) / 20);
   }
 }
+
+function tableDisplay() {
+  var sectionEl = document.getElementById('sectionTable');
+  var tableEl = document.createElement('table');
+  var rowEl = document.createElement('tr');
+
+  var headEl = document.createElement('th');
+    headEl.textContent = 'Time of Day: ';
+    rowEl.appendChild(headEl);
+
+  for (var i = 0; i < timeArray.length; i++) {
+    var dataEl = document.createElement('td');
+      dataEl.textContent = timeArray[i];
+      rowEl.appendChild(dataEl);
+  };
+
+  tableEl.appendChild(rowEl);
+  sectionEl.appendChild(tableEl);
+};
+
+tableDisplay();
