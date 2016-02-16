@@ -81,7 +81,6 @@ CampCoffee.prototype.renderCups = function() {
 }
 
 CampCoffee.prototype.renderPounds = function() {
-
   this.mathCustomer();
   this.mathPounds();
   this.mathCups();

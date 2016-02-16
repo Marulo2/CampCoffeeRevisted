@@ -1,21 +1,34 @@
+body {
+  background-color: darkorange;
+}
+
 table {
   border: 1px solid black;
   margin: 1vw;
+  table-layout: fixed;
 }
 
 tr {
   border: 1px solid black;
   padding: 1vw;
+  background-color: yellow;
+  font-size: 18px;
+  width: 7vw;
 }
 
 td {
   border: 1px solid black;
   padding: 1vw;
+  width: 7vw;
+  text-align: center;
 }
 
 th {
+  background-color: darkred;
+  color: white;
   border: 1px solid black;
   padding: 1vw;
   display: flex;
   justify-content: space-around;
+  width: 7vw;
 }
